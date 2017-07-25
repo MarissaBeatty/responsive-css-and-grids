@@ -1,0 +1,348 @@
+/* my CSS */
+
+/*defaults*/
+
+/*fonts: font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif; */
+
+
+body {
+  max-width: 100%;
+  box-sizing: border-box;
+  background: white;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-image: url("imgs/phone-in-hand-mobile.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 550px;
+    /*position: relative;*/
+    border-top: 10px solid #42f4bf;
+}
+/*
+header img {
+    position: absolute;
+    max-width: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: -5000;
+} */
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 3rem;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
+  color: #696969;
+}
+
+a {
+color: white;
+font-size: 2rem;
+}
+
+video {
+  border: 12px solid black;
+  padding: 0;
+  border-radius: 5%;
+}
+
+/*flexbox row, no justify or align */
+.purchaseLinks, .emailSignup {
+  display: flex;
+  flex-direction: row;
+}
+
+/*flexbox refactoring */
+header a, .benefits, .reviewText, .socialIcons, .socialIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewerImgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.subText, footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerText, .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.purchaseLink, .benefit, .reviewer, .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*specifics*/
+
+header p {
+  color: white;
+  max-width: 80%;
+  font-size: 1.3rem;
+}
+
+h1 span {
+  color: #42f4bf;
+  font-size: 3.5rem;
+}
+
+.purchaseLink {
+  text-decoration: none;
+}
+
+header a {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 75%;
+  text-decoration: none;
+}
+
+header a:hover {
+    background-color: #42f4bf;
+}
+
+.benefits {
+  margin-top: 60px;
+  flex-direction: column;
+}
+
+.benefit {
+  width: 100%;
+  flex-direction: row;
+  padding: 3%;
+  text-align: center;
+}
+
+.benefitText {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 10px;
+}
+
+.benefit i {
+  color: white;
+  background-color: #42f4bf;
+  font-size: 3rem;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.subscribe {
+  background-color: lightGrey;
+  height: auto;
+}
+
+.subscribe video {
+    order: 1;
+    margin-top: 20px;
+}
+
+.subText {
+  max-width: 100%;
+  padding: 30px; 
+  justify-content: center;
+  align-items: center;
+  order: 2;
+}
+
+.signupText {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.signupButton {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  padding: 10px;
+  background-color: #42f4bf;
+  width: 100px;
+}
+
+.subText h3 {
+  font-size: 1.3rem;
+}
+
+.reviews {
+  height: auto;
+  justify-content: center;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.reviewer {
+  width: 60%;
+  margin-top: 50px;
+}
+
+.reviewerImgs {
+  padding-left: 25px;        
+  margin: 2px;
+  margin-top: 50px;
+  justify-content: flex-start;
+}
+
+.reviewerImgs img {
+  margin: 3px;
+  opacity: 1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.colorLayer:hover {
+    opacity: 0.5;
+}
+
+.contact {
+  height: 300;
+  padding: 30px;
+}
+
+.contact p {
+    max-width: 70%;
+    text-align: center;
+}
+
+.socialIcon {
+  width: 30px;
+  height: 30px;
+  background-color: lightGrey;
+  border-radius: 75%;
+  margin: 5px;
+}
+
+.socialIcon i {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.socialIcon:hover {
+  background-color: #42f4bf;
+}
+
+footer {
+  height: auto;
+  background-color: lightGrey;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  margin: 10px;
+  font-size: 1rem;
+  color: #696969;
+}
+
+footer a:hover {
+  color: #42f4bf;
+}
+
+/*media queries */
+
+/* Medium and up screen sizes */
+
+@media only screen and (min-width: 641px) {
+
+    .benefit {
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    .benefits {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .subscribe {
+        flex-direction: row;
+        height: 450px;
+    }
+    
+    .subText {
+        max-width: 50%;
+        order: 1;
+    }
+    
+    .subscribe video {
+        order: 2;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    
+    
+    .benefits {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        background-image: url("imgs/phone-in-hand.jpg");
+        background-attachment: fixed;
+        max-width: 100%;
+        height: 600px;
+        
+    } 
+    
+    .headerText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 30%;
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+    
+} 
