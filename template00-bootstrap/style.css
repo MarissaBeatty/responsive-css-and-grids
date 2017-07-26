@@ -157,11 +157,10 @@ header a:hover {
     align-items: center;
 }
 
-.benText {
+.benefits section .benText {
     display: flex;
     flex-direction: column;
     max-width: 80%;
-    background-color: red;
 }
 
 .subscribe {
